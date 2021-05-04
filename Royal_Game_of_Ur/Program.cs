@@ -7,6 +7,7 @@ namespace Royal_Dame_of_Ur
         static void Main(string[] args)
         {
             string escolha;
+            Rules rules = new Rules();
             
             Console.WriteLine("Bem-vindos ao Royal Game of Ur!");
             Console.WriteLine("São precisos dois jogadores para este jogo.");
@@ -27,7 +28,7 @@ namespace Royal_Dame_of_Ur
                 }
                 else if (escolha == "2")
                 {
-                    Console.WriteLine("Regras em breve!!!");
+                    rules.ShowRules();
                     escolha = Console.ReadLine();
                 }
             } while (escolha != "3");
