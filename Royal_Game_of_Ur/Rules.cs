@@ -14,7 +14,7 @@ namespace Royal_Game_of_Ur
             Console.WriteLine("6 - Há zonas de perigo e há zonas seguras no tabuleiro.");
             Console.WriteLine("7 - Se na zona de perigo, uma pela aterrar assim de outra, a peça que está por debaixo, regressa ao inicio do tabuleiro.");
             Console.WriteLine("8 - Um jogador cair em cima das casas especiais, pode jogar novamente.");
-            Console.WriteLine("8 - Ganha o jogador que conseguir levar todas as 7 peças até ao final do tabuleiro.");
+            Console.WriteLine("9 - Ganha o jogador que conseguir levar todas as 7 peças até ao final do tabuleiro.");
         }
     }
 }
