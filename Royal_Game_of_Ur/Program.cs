@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Royal_Dame_of_Ur
+namespace Royal_Game_of_Ur
 {
     class Program
     {
