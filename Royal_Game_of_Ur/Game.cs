@@ -13,11 +13,7 @@ namespace Royal_Game_of_Ur
 
         public void Play()
         {
-            Console.WriteLine("Game very soon!!!");
-            while (!board.Winner())
-            {
-                Console.WriteLine("Game very soon!!!");
-            }
+            Console.WriteLine("Roll the Dices");
         }
     }
 }
