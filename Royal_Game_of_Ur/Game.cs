@@ -19,6 +19,7 @@ namespace Royal_Game_of_Ur
                 Console.WriteLine(board);
                 board.Winner();
             }
+
         }
     }
 }
