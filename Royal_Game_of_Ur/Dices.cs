@@ -13,6 +13,7 @@ namespace Royal_Game_of_Ur
         private int somadecasas = 0;
         private int casaquesaiu;
 
+        // Definir quando é que há casa para o jogador avançar
         public int RollDices()
         {
             for (int i = 0; i < 4; i++)
