@@ -6,11 +6,13 @@ namespace Royal_Game_of_Ur
     {
         private Board board;
 
+        // Construtor da Classe Game
         public Game()
         {
             board = new Board();
         }
 
+        // Classe onde o jogo vai acontecer
         public void Play()
         {
             Console.WriteLine("Game very soon!!!");

@@ -4,6 +4,8 @@ namespace Royal_Game_of_Ur
 {
     class Program
     {
+
+        //Onde tudo começa
         static void Main(string[] args)
         {
             string escolha;
@@ -19,7 +21,7 @@ namespace Royal_Game_of_Ur
 
             escolha = Console.ReadLine();
 
-
+            // Permitir ao jogador escolher o que quer fazer
             do
             {
                 if (escolha == "1")

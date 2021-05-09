@@ -4,6 +4,7 @@ namespace Royal_Game_of_Ur
 {
     public class Rules
     {
+        // Só precisa do metodo para mostrar as regras
         public void ShowRules()
         {
             Console.WriteLine("1 - São precisos duas pessoas para jogar este jogo.");
