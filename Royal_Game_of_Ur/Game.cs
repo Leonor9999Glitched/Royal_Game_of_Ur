@@ -16,7 +16,8 @@ namespace Royal_Game_of_Ur
             Console.WriteLine("Game very soon!!!");
             while (!board.Winner())
             {
-                Console.WriteLine("Game very soon!!!");
+                Console.WriteLine(board);
+                board.Winner();
             }
         }
     }
