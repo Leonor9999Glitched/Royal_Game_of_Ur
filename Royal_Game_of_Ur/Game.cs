@@ -10,6 +10,7 @@ namespace Royal_Game_of_Ur
         public Game()
         {
             board = new Board();
+            board.DrawBoard();
         }
 
         // Classe onde o jogo vai acontecer
