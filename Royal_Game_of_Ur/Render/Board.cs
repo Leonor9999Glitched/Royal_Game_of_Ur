@@ -29,7 +29,7 @@ namespace Royal_Game_of_Ur
         }
 
         //Metodo para definir o fim do jogo
-        public bool Winner()
+        public bool Winner(bool endofgame)
         {
             //O jogo acaba quando um dos jogadores consegue colocar as sete peças no final
             return true;

@@ -12,6 +12,8 @@ namespace Royal_Game_of_Ur
 
         public int n_copia;
 
+        public bool endofgame;
+
         // Construtor da Classe Game
         public Game()
         {
@@ -22,12 +24,14 @@ namespace Royal_Game_of_Ur
         // Classe onde o jogo vai acontecer
         public void Play()
         {
-            Console.WriteLine("Player 1 Roll the Dices");
+            endofgame = false;
 
-            n_copia = dices.RollDices(n);
-
-            while (!board.Winner())
+            while (endofgame == false)
             {
+                Console.WriteLine("Player 1 Roll the Dices");
+
+                n_copia = dices.RollDices(n);
+
                 if(n_copia == 0)
                 {
                     Console.WriteLine("O jogador perdeu a vez.");      
@@ -36,7 +40,21 @@ namespace Royal_Game_of_Ur
                 {
                     Console.WriteLine("O jogador avança" + n_copia);
                 }
-                board.Winner();
+
+                Console.WriteLine("Player 2 Roll the Dices");
+
+                n_copia = dices.RollDices(n);
+
+                if(n_copia == 0)
+                {
+                    Console.WriteLine("O jogador perdeu a vez.");      
+                }
+                else
+                {
+                    Console.WriteLine("O jogador avança" + n_copia);
+                }
+
+                endofgame = board.Winner(endofgame);
             }
 
         }
