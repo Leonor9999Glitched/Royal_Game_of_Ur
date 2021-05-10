@@ -2,11 +2,11 @@
 
 namespace Royal_Game_of_Ur
 {
-    class Program
+    class Menu
     {
 
         //Onde tudo começa
-        static void Main(string[] args)
+        public void MainMenu()
         {
             string escolha;
             Rules rules = new Rules();
