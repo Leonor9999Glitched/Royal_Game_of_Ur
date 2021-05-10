@@ -8,7 +8,9 @@ namespace Royal_Game_of_Ur
 
         Dices dices = new Dices();
 
-        private int n = 0;
+        public int n = 0;
+
+        public int n_copia;
 
         // Construtor da Classe Game
         public Game()
@@ -22,19 +24,17 @@ namespace Royal_Game_of_Ur
         {
             Console.WriteLine("Player 1 Roll the Dices");
 
-            dices.RollDices(n);
+            n_copia = dices.RollDices(n);
 
             while (!board.Winner())
             {
-                dices.RollDices(n);
-
-                if(n == 0)
+                if(n_copia == 0)
                 {
                     Console.WriteLine("O jogador perdeu a vez.");      
                 }
                 else
                 {
-                    Console.WriteLine("O jogador avança" + n);
+                    Console.WriteLine("O jogador avança" + n_copia);
                 }
                 board.Winner();
             }
