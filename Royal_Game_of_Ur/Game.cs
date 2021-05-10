@@ -17,7 +17,10 @@ namespace Royal_Game_of_Ur
         // Classe onde o jogo vai acontecer
         public void Play()
         {
-            Console.WriteLine("Game very soon!!!");
+            Console.WriteLine("Player 1 Roll the Dices");
+
+            dices.RollDices();
+
             while (!board.Winner())
             {
                 
