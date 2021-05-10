@@ -10,21 +10,26 @@ namespace Royal_Game_of_Ur
         Random rnd = new Random();
 
         //private int [] dices = new int [4];
-        private int somadecasas = 0;
         private int casaquesaiu;
 
         // Definir quando é que há casa para o jogador avançar
-        public int RollDices()
+        public int RollDices(int n)
         {
+
             for (int i = 0; i < 4; i++)
             {
-                casaquesaiu = rnd.Next(0, 1);
+                casaquesaiu = rnd.Next(0, 2);
+
                 if (casaquesaiu == 1)
                 {
-                    somadecasas ++;
+                    n ++;
+                }
+                else if(casaquesaiu == 2)
+                {
+                    n ++;
                 }
             }
-            return somadecasas;
+            return n;
         }
     }
 }

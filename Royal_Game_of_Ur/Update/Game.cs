@@ -5,7 +5,10 @@ namespace Royal_Game_of_Ur
     public class Game
     {
         private Board board;
+
         Dices dices = new Dices();
+
+        private int n = 0;
 
         // Construtor da Classe Game
         public Game()
@@ -19,12 +22,11 @@ namespace Royal_Game_of_Ur
         {
             Console.WriteLine("Player 1 Roll the Dices");
 
-            dices.RollDices();
+            dices.RollDices(n);
 
             while (!board.Winner())
             {
-                
-                int n = dices.RollDices();
+                dices.RollDices(n);
 
                 if(n == 0)
                 {
