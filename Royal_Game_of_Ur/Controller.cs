@@ -1,0 +1,31 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Royal_Dame_of_Ur
+{
+    public enum PlayerType
+    {
+        Player1,
+        Player2,
+        Neutral
+    }
+
+    /// Guarda o estado de cada turno
+    /// 
+    /// ROLLING o jogador tem de "rodar" o dado e recebe o resultado em moves(0, 1, 2, etc. moves).
+    /// 
+    /// SELECTING o jogador deve selecionar a peça que quer mover.
+    ///
+    /// MOVING é o movimento da peça selecionada e espera que o movimento termine.
+    /// 
+    /// Aseguir a estes três passos,
+    /// O jogo termina o turno e repete.
+ 
+    public enum TurnStates
+    {
+        ROLLING,
+        SELECTING,
+        MOVING
+    }
+}
