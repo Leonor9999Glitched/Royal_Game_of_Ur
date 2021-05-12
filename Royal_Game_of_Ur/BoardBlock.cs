@@ -36,6 +36,20 @@ namespace Royal_Dame_of_Ur
         // OccupationData dos Block´s
         
         private OccupationData occupationData = new OccupationData();
+        
+        
+        //Construtores
+
+        
+        // Principalmente usado para criar os block´s usados pelo player
+        public BoardBlock(PlayerType owner, int position)
+        {
+            BoardBlockName = owner.ToString() + " BoardBlock " + position;
+            this.owner = owner;
+            this.position = position;
+            isRosette = (position == 3 || position == 7 || position == 13);
+            shared = owner != PlayerType.Neutral;
+        }
     }
 }
 
