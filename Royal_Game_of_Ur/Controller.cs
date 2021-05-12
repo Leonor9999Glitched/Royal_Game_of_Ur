@@ -43,7 +43,7 @@ namespace Royal_Dame_of_Ur
 
         // Numero de movimentos num turno
         int roll = 0;
-        // Flag para se o player etsá na casa com a rosa
+        // Flag para ver se o player etsá na casa com a rosa
         bool landedOnRosette = false;
     }
 }
