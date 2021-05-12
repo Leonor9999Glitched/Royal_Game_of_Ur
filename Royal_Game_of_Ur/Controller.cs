@@ -37,5 +37,13 @@ namespace Royal_Dame_of_Ur
 
         private int player1Points = 0;
         private int player2Points = 0;
+
+        private PlayerType currentTurn = PlayerType.Player1;
+        private TurnStates currentTurnState = TurnStates.ROLLING;
+
+        // Numero de movimentos num turno
+        int roll = 0;
+        // Flag para se o player etsá na casa com a rosa
+        bool landedOnRosette = false;
     }
 }
