@@ -34,5 +34,8 @@ namespace Royal_Dame_of_Ur
         const int NUM_TILES = 20;
         const int CENTER_TILES = 8;
         const float MOVE_WAIT_TIME = 1.5f;
-     }
+
+        private int player1Points = 0;
+        private int player2Points = 0;
+    }
 }
