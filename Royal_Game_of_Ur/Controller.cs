@@ -21,11 +21,18 @@ namespace Royal_Dame_of_Ur
     /// 
     /// Aseguir a estes três passos,
     /// O jogo termina o turno e repete.
- 
+
     public enum TurnStates
     {
         ROLLING,
         SELECTING,
         MOVING
     }
+
+    public class Controller
+     {
+        const int NUM_TILES = 20;
+        const int CENTER_TILES = 8;
+        const float MOVE_WAIT_TIME = 1.5f;
+     }
 }
