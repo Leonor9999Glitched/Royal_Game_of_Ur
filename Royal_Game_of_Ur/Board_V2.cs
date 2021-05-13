@@ -6,6 +6,9 @@ namespace Royal_Game_of_Ur
 {
     public class Board_V2
     {
-        public Piece 
+        public Board_V2()
+        {
+            
+        } 
     }
 }

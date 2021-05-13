@@ -32,5 +32,20 @@ namespace Royal_Game_of_Ur
                 Console.WriteLine("A peça já está no tabuleiro.");
             }
         }
+
+        //Agora a peça inicializada terá que se mover consoante o número de casas que sairem no dado
+        //A peça terá que se mover de acordo o número de casas que sairam e deve ir para uma certa posição
+
+        public void MovePiece(int casas)
+        {
+            if(casas == 0)
+            {
+                Console.WriteLine("O jogador perdeu a vez");
+            }
+            else
+            {
+
+            }
+        }            
     }
 }

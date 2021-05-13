@@ -18,13 +18,9 @@ namespace Royal_Game_of_Ur
 
             for (int i = 0; i < 4; i++)
             {
-                casaquesaiu = rnd.Next(0, 2);
+                casaquesaiu = rnd.Next(2);
 
                 if (casaquesaiu == 1)
-                {
-                    n ++;
-                }
-                else if(casaquesaiu == 2)
                 {
                     n ++;
                 }
