@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Royal_Dame_of_Ur
 {
-    public class Block
+    public class Block  //TileObject
     {
         public enum BlockType
         {
