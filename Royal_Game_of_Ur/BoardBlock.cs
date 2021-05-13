@@ -99,16 +99,16 @@ namespace Royal_Game_of_Ur
             if (occupationData.IsOccupied)
             {
                 // se o jogador esta a ultrapassar uma peça sua
-                if (occupationData.PlayerId == (int)owner)
+                if (occupationData.PlayerID == (int)owner)
                     occupationData.SelfOccupied = true;
                 // se o jogador esta a ultrapassar uma peça do seu oponente
                 else
                 {
-                    occupationData.OverlapperId = pieceid;
+                    occupationData.OverLapperID = pieceid;
                     occupationData.OpponentOverlap = true;
                 }
 
-                occupationData.OverlapLocation = position;
+                occupationData.OverLapLocation = position;
             }
 
             return occupationData;
@@ -130,16 +130,16 @@ namespace Royal_Game_of_Ur
                 success = false;
 
                 // se o jogador esta a ultrapassar uma peça sua
-                if (occupationData.PlayerId == playerid)
+                if (occupationData.PlayerID == playerid)
                     occupationData.SelfOccupied = true;
                 // se o jogador esta a ultrapassar uma peça do seu oponente
                 else
                 {
-                    occupationData.OverlapperId = pieceid;
+                    occupationData.OverLapperID = pieceid;
                     occupationData.OpponentOverlap = true;
                 }
 
-                occupationData.OverlapLocation = position;
+                occupationData.OverLapLocation = position;
             }
 
             return occupationData;
@@ -152,7 +152,7 @@ namespace Royal_Game_of_Ur
 
         public void Unoccupy()
         {
-            occupationData.Unoccupy();
+            occupationData.UnOccupy();
         }
 
     }

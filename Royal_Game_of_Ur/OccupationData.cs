@@ -24,6 +24,14 @@ namespace Royal_Game_of_Ur
             pieceID = pieceid;
         }
 
+        public void UnOccupy()
+        {
+            isOccupied = false;
+            playerID = -1;
+            pieceID = -1;
+            selfOccupied = false;
+        }
+
         public bool IsOccupied
         {
             get { return isOccupied; }
