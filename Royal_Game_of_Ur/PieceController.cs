@@ -6,7 +6,7 @@ namespace Royal_Game_of_Ur
 {
     public class PieceController
     {
-        private List<PieceLocationData> pieces = new ist<PieceLocationData>();
+        private List<PieceLocationData> pieces = new List<PieceLocationData>();
 
         public void AddPiece(Piece p, BoardBlock t)
         {
@@ -63,7 +63,7 @@ namespace Royal_Game_of_Ur
 
             foreach (PieceLocationData pld in pieces)
             {
-                if (pld.GetPiece() == piece)
+                if (pld.GetPiece().GetPieceID() == pieceid)
                 {
                     result = pld.GetTile();
                 }
@@ -127,6 +127,11 @@ namespace Royal_Game_of_Ur
         {
             tile = t;
             hasTile = tile != null;
+        }
+
+        public Piece GetPiece()
+        {
+            return piece;
         }
 
         public BoardBlock GetTile()

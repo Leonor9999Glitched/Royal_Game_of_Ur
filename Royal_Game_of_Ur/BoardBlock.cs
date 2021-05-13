@@ -9,7 +9,7 @@ namespace Royal_Game_of_Ur
     // cordena instancias, posições no board,
     // se está ocupado por outra peça, por qual jogador.
     
-    class BoardBlock  //Tile
+    public class BoardBlock  //Tile
     {
         string BoardBlockName;
 

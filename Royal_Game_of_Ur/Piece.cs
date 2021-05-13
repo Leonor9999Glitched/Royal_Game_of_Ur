@@ -46,6 +46,39 @@ namespace Royal_Game_of_Ur
             {
 
             }
-        }            
+        } 
+
+        public void SetPieceID (int newID)
+        {
+            piece_ID = newID;
+        }
+
+        public int GetPieceID()
+        {
+            return piece_ID;
+        } 
+
+        public void SetOwner(PlayerType owner)
+        {
+            this.owner = owner;
+        } 
+
+        public PlayerType GetOwner() 
+        {
+            return owner;
+        }
+
+        //IEnumerator MoveToPosition()
+
+        public override string ToString()
+        {
+            return owner.ToString() + " piece " + piece_ID;
+        } 
+
+        public bool Scored
+        {
+            get { return scored; }
+            set { scored = value; }
+        } 
     }
 }
