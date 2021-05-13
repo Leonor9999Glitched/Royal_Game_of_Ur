@@ -2,13 +2,13 @@ using System;
 
 namespace Royal_Game_of_Ur
 {
-    public class Board
+    public class Board_V2
     {
 
         private char [][] board = new char [3][];
 
         //Construtor da Board
-        public Board()
+        public Board_V2()
         {
             board[0] = new char[8] {'#', 'O', 'O', 'I', ' ', ' ', 'F', 'O'};
             board[1] = new char[8] {'O', 'O', 'O', '#', 'O', 'O', 'O', 'O'};

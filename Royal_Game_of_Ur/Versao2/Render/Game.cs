@@ -4,7 +4,7 @@ namespace Royal_Game_of_Ur
 {
     public class Game
     {
-        private Board board;
+        private Board_V2 board_V2;
         Dices dices = new Dices();
         Piece newpiece = new Piece();
         public int n = 0;
@@ -14,8 +14,8 @@ namespace Royal_Game_of_Ur
         // Construtor da Classe Game
         public Game()
         {
-            board = new Board();
-            board.DrawBoard();
+            board_V2 = new Board_V2();
+            board_V2.DrawBoard();
         }
 
         // Classe onde o jogo vai acontecer
