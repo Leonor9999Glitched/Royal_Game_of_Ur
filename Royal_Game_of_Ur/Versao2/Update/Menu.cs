@@ -9,7 +9,7 @@ namespace Royal_Game_of_Ur
         public void MainMenu()
         {
             string escolha;
-            // Rules rules = new Rules();
+            Rules rules = new Rules();
             
             Console.WriteLine("Bem-vindos ao Royal Game of Ur!");
             Console.WriteLine("São precisos dois jogadores para este jogo.");
@@ -32,7 +32,7 @@ namespace Royal_Game_of_Ur
                 }
                 else if (escolha == "2")
                 {
-                    // rules.ShowRules();
+                    rules.ShowRules();
                     escolha = Console.ReadLine();
                 }
             } while (escolha != "3");

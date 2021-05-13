@@ -5,8 +5,8 @@ namespace Royal_Game_of_Ur
     public class Game
     {
         private Board_V2 board_V2;
+
         Dices dices = new Dices();
-        Piece newpiece = new Piece();
         public int n = 0;
         public int n_copia;
         public bool endofgame;
@@ -28,8 +28,6 @@ namespace Royal_Game_of_Ur
                 Console.WriteLine("Player 1 Roll the Dices");
 
                 n_copia = dices.RollDices(n);    
-
-                newpiece.MovePiece(n_copia);
                 
                 Console.WriteLine("O jogador avança" + n_copia);
 
@@ -46,7 +44,7 @@ namespace Royal_Game_of_Ur
                     Console.WriteLine("O jogador avança" + n_copia);
                 }
 
-                endofgame = board.Winner(endofgame);
+                endofgame = board_V2.Winner(endofgame);
             }
 
         }
