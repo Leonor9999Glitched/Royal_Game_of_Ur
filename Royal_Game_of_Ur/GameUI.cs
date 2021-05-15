@@ -16,12 +16,18 @@ namespace Royal_Game_of_Ur
 
         public int MainMenu()
         {
-            Console.WriteLine("Menu");
-            Console.WriteLine("----");
-            Console.WriteLine("1. Insert player");
-            Console.WriteLine("2. List all players");
-            Console.WriteLine("3. List player with score greater than");
-            Console.WriteLine("0. Exit");
+            Console.WriteLine("------------------------- Menu --------------------------");
+            Console.WriteLine("---------------------------------------------------------");
+            Console.WriteLine("-----       Bem-vindos ao Royal Game of Ur!     ---------");
+            Console.WriteLine("---    São precisos dois jogadores para este jogo.   ----");
+            Console.WriteLine("------------       Escolha uma opção       --------------");
+            Console.WriteLine("---------------------------V-----------------------------");
+            Console.WriteLine("");
+            Console.WriteLine("---------------------------------------------------------");
+            Console.WriteLine("------------             1. Play           --------------");
+            Console.WriteLine("------------             2. Rules          --------------");
+            Console.WriteLine("------------             0. Exit           --------------");
+            Console.WriteLine("---------------------------------------------------------");
             Console.WriteLine("");
             Console.Write("> ");
 

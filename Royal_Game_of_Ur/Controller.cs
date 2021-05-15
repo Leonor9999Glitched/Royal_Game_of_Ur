@@ -18,8 +18,8 @@ namespace Royal_Game_of_Ur
             this.view = view;
             do
             {
-                // 1 -> Insert player
-                // 2 -> List all players
+                // 1 -> Play
+                // 2 -> Rules
                 // 3 -> List players w/ score > x
                 // 0 -> Exit
                 input = view.MainMenu();
@@ -29,7 +29,7 @@ namespace Royal_Game_of_Ur
                     case 0:
                         break;
                     case 1:
-                        InsertPlayer();
+                        Play();
                         break;
                     case 2:
                         view.ShowPlayers(list);
@@ -45,7 +45,7 @@ namespace Royal_Game_of_Ur
             while (input != 0);
         }
 
-        private void InsertPlayer()
+        private void Play()
         {
             // Ask view to give us a player
             Player p = view.AskForPlayer();
