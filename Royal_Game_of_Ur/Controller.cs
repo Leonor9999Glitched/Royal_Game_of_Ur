@@ -24,6 +24,7 @@ namespace Royal_Game_of_Ur
                 // 0 -> Exit
                 input = view.MainMenu();
 
+                //As escolhas do jogador em relação ao que quer fazer
                 switch (input)
                 {
                     case 0:
@@ -47,23 +48,23 @@ namespace Royal_Game_of_Ur
 
         private void Play()
         {
-            // Ask view to give us a player
+            // Pede ao viewer para nos dar um jogador
             Player p = view.AskForPlayer();
 
-            // Insert player in player list
+            // Põe esse jogador na lista
             list.Add(p);
         }
 
         private void ShowPlayersWithScore()
         {
-            // Ask view for minimum score
+            // Pede ao viewer por um score minimo
             int minScore = view.AskForMinimumScore();
 
-            // Create collection with players above minimum score
+            // Cria uma lista com o jogadores que tenha uma pontação acima de um certo valor
             IEnumerable<Player> players =
                 GetPlayersWithScoreGreaterThan(minScore);
 
-            // Ask view to show players
+            // Mostrar jogadores
             view.ShowPlayers(players);
         }
 

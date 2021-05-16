@@ -14,6 +14,7 @@ namespace Royal_Game_of_Ur
             // this.list = list;
         }
 
+        //Menu
         public int MainMenu()
         {
             Console.WriteLine("------------------------- Menu --------------------------");
@@ -25,7 +26,8 @@ namespace Royal_Game_of_Ur
             Console.WriteLine("");
             Console.WriteLine("---------------------------------------------------------");
             Console.WriteLine("------------             1. Play           --------------");
-            Console.WriteLine("------------             2. Rules          --------------");
+            Console.WriteLine("------------         2. Show Players       --------------");
+            Console.WriteLine("------------          3. Show Scores       --------------");
             Console.WriteLine("------------             0. Exit           --------------");
             Console.WriteLine("---------------------------------------------------------");
             Console.WriteLine("");
@@ -34,6 +36,7 @@ namespace Royal_Game_of_Ur
             return int.Parse(Console.ReadLine());
         }
 
+        //O jogador escolhe a opcção errada
         public void InvalidOption()
         {
             Console.WriteLine("\nInvalid option! Press any key to continue...");
@@ -49,14 +52,15 @@ namespace Royal_Game_of_Ur
                 Console.WriteLine($"-> {p}");
             }
             Console.WriteLine("\nPress any key to continue...");
-            Console.ReadKey();
+            Console.ReadLine();
             Console.WriteLine();
         }
 
+        // Criação do jogaor
         public Player AskForPlayer()
         {
             string name;
-            int score;
+            int score = 0;
 
             Console.WriteLine();
             Console.WriteLine("Insert player data");
@@ -64,12 +68,12 @@ namespace Royal_Game_of_Ur
             Console.WriteLine();
             Console.Write("Name > ");
             name = Console.ReadLine();
-            Console.Write("Score > ");
-            score = int.Parse(Console.ReadLine());
+            Console.Write("Score > " + score);
 
-            return new Player(name, score);
+            return new Player(name, score); 
         }
 
+        // Score minimo
         public int AskForMinimumScore()
         {
             Console.WriteLine();
